@@ -3,6 +3,7 @@
     "name": "limehome",
     "slug": "limehome",
     "version": "1.0.0",
+    "jsEngine": "hermes",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,6 +25,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      
+      "config":{
+        "googleMaps":{
+          "apiKey":"AIzaSyBOHcqweM2ICFZLT3wq2BNu5tKv63mEyNA"
+        }
       }
     },
     "web": {
