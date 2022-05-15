@@ -13,18 +13,15 @@ const ApartmentCardView = props => {
     const index = props.index
     return (
         <TouchableOpacity onPress={props.onPress} style={styles.slideContainer}>
-            <SharedElement id={`${item.url}`}>
-                <ImageBackground
-                    style={styles.imageBackground}
-                    imageStyle={styles.imageStyles}
-                    source={{ uri: item.images[0].url }}
-                >
-                </ImageBackground>
-            </SharedElement>
+            <ImageBackground
+                style={styles.imageBackground}
+                imageStyle={styles.imageStyles}
+                source={{ uri: item.images[0].url }}
+            >
+            </ImageBackground>
             <View style={styles.infoContainer}>
                 <Text style={styles.title}>{item.location.addressLine1}</Text>
                 <View style={styles.detailsContainer}>
-
                     <Icon
                         color={'#B26422'}
                         name='location-pin'
